@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+let palavra = ['P', 'A', 'L', 'A', 'V', 'R', 'A'];
+let adivinhar = ['_', '_', '_', '_', '_', '_', '_'];
+let result, letra, terminou = false;
+
+function palavraChave(letra){
+    letra = letra.toUpperCase();
+
+    for(let i = 0; i <= palavra.length -1; i++){
+        if (letra == palavra[i]){
+            adivinhar[i] = letra;
+            palavra == true;
+            let aux = 1
+        }else{
+            aux = 0
+        }
+
+}
+    if(aux == 1){
+        console.log('Acertou')
+    }else{
+        console.log('Errou')
+    }
+
+console.log(adivinhar);
+
+        if(JSON.stringify(palavra) === JSON.stringify(adivinhar)){
+            terminou = true;
+            console.log('Parabéns! Você acertou a palavra')
+        }
+        else{
+            terminou = false;
+        }
+
+
+}
+
+
+
+
+</script>
+</html>
