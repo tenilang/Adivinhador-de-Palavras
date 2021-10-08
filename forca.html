@@ -12,7 +12,7 @@ let adivinhar = ['_', '_', '_', '_', '_', '_', '_'];
 let result, letra, terminou = false;
 
 function palavraChave(letra){
-    letra = letra.toUpperCase();
+letra = letra.toUpperCase();
 
     for(let i = 0; i <= palavra.length -1; i++){
         if (letra == palavra[i]){
@@ -31,6 +31,10 @@ function palavraChave(letra){
     }
 
 console.log(adivinhar);
+
+/*   JSON é uma sintaxe para serialização
+de objetos, converte valores em javascript
+para uma String  JSON   */
 
         if(JSON.stringify(palavra) === JSON.stringify(adivinhar)){
             terminou = true;
