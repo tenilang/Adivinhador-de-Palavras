@@ -32,9 +32,6 @@ letra = letra.toUpperCase();
 
 console.log(adivinhar);
 
-/*   JSON é uma sintaxe para serialização
-de objetos, converte valores em javascript
-para uma String  JSON   */
 
         if(JSON.stringify(palavra) === JSON.stringify(adivinhar)){
             terminou = true;
@@ -47,7 +44,17 @@ para uma String  JSON   */
 
 }
 
+/*   JSON é uma sintaxe para serialização
+de objetos, converte valores em javascript
+para uma String JSON   
 
+JSON.stringify:
+Retorna uma string JSON correspondente ao
+valor especificado, opcionalmente, pode incluir
+apenas determinados propriedades ou substituir
+valores de propriedade de acordo com a definição
+feita pelo usuário.
+*/
 
 
 </script>
