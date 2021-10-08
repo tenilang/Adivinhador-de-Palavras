@@ -9,7 +9,7 @@
 
 let palavra = ['P', 'A', 'L', 'A', 'V', 'R', 'A'];
 let adivinhar = ['_', '_', '_', '_', '_', '_', '_'];
-let result, letra, terminou = false;
+let result, letra, terminou = false, aux = 0;
 
 function palavraChave(letra){
 letra = letra.toUpperCase();
@@ -18,20 +18,17 @@ letra = letra.toUpperCase();
         if (letra == palavra[i]){
             adivinhar[i] = letra;
             palavra == true;
-            let aux = 1
+            aux = 1;
         }else{
-            aux = 0
+            aux = 0;
         }
-
-}
-    if(aux == 1){
-        console.log('Acertou')
-    }else{
-        console.log('Errou')
     }
 
-console.log(adivinhar);
-
+        if(aux == 1){
+            console.log('Acertou');
+        }else{
+            console.log('Errou')
+        }
 
         if(JSON.stringify(palavra) === JSON.stringify(adivinhar)){
             terminou = true;
@@ -42,8 +39,9 @@ console.log(adivinhar);
         }
 
 
-}
 
+    console.log(adivinhar);
+}
 /*   JSON é uma sintaxe para serialização
 de objetos, converte valores em javascript
 para uma String JSON   
